@@ -1,0 +1,65 @@
+<%= form_for(@patientcase) do |f| %>
+  <% if @patientcase.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@patientcase.errors.count, "error") %> prohibited this patientcase from being saved:</h2>
+
+      <ul>
+      <% @patientcase.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :procedure_date %><br />
+    <%= f.date_select :procedure_date %>
+  </div>
+  <div class="field">
+    <%= f.label :procedure_time %><br />
+    <%= f.time_select :procedure_time %>
+  </div>
+  <div class="field">
+    <%= f.label :facility_id %><br />
+    <%= f.number_field :facility_id %>
+  </div>
+  <div class="field">
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :dob %><br />
+    <%= f.date_select :dob %>
+  </div>
+  <div class="field">
+    <%= f.label :payment %><br />
+    <%= f.text_field :payment %>
+  </div>
+  <div class="field">
+    <%= f.label :dictation %><br />
+    <%= f.text_field :dictation %>
+  </div>
+  <div class="field">
+    <%= f.label :followup %><br />
+    <%= f.text_field :followup %>
+  </div>
+  <div class="field">
+    <%= f.label :physician_id %><br />
+    <%= f.number_field :physician_id %>
+  </div>
+  <div class="field">
+    <%= f.label :procedure_id%><br />
+    <%= f.number_field :procedure_id%>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.number_field :age %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

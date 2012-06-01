@@ -1,0 +1,33 @@
+<%= form_for(@caseprocedure) do |f| %>
+  <% if @caseprocedure.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@caseprocedure.errors.count, "error") %> prohibited this caseprocedure from being saved:</h2>
+
+      <ul>
+      <% @caseprocedure.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :laterality %><br />
+    <%= f.text_field :laterality %>
+  </div>
+  <div class="field">
+    <%= f.label :volume %><br />
+    <%= f.text_field :volume %>
+  </div>
+  <div class="field">
+    <%= f.label :patient_case_id %><br />
+    <%= f.number_field :patient_case_id %>
+  </div>
+  <div class="field">
+    <%= f.label :procedure_id %><br />
+    <%= f.number_field :procedure_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

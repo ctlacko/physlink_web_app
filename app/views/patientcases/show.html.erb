@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Procedure date:</b>
+  <%= @patientcase.procedure_date %>
+</p>
+
+<p>
+  <b>Procedure time:</b>
+  <%= @patientcase.procedure_time %>
+</p>
+
+<p>
+  <b>Facility:</b>
+  <%= @patientcase.facility_id %>
+</p>
+
+<p>
+  <b>Firstname:</b>
+  <%= @patientcase.firstname %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @patientcase.lastname %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @patientcase.dob %>
+</p>
+
+<p>
+  <b>Payment:</b>
+  <%= @patientcase.payment %>
+</p>
+
+<p>
+  <b>Dictation:</b>
+  <%= @patientcase.dictation %>
+</p>
+
+<p>
+  <b>Followup:</b>
+  <%= @patientcase.followup %>
+</p>
+
+<p>
+  <b>Physician:</b>
+  <%= @patientcase.physician_id %>
+</p>
+
+<p>
+  <b>Id:</b>
+  <%= @patientcase.id %>
+</p>
+
+<p>
+  <b>Procedure:</b>
+  <%= @patientcase.procedure_id %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @patientcase.age %>
+</p>
+
+
+<%= link_to 'Edit', edit_patientcase_path(@patientcase) %> |
+<%= link_to 'Back', patientcases_path %>

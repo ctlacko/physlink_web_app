@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Laterality:</b>
+  <%= @caseprocedure.laterality %>
+</p>
+
+<p>
+  <b>Volume:</b>
+  <%= @caseprocedure.volume %>
+</p>
+
+<p>
+  <b>Patient case:</b>
+  <%= @caseprocedure.patient_case_id %>
+</p>
+
+<p>
+  <b>Procedure:</b>
+  <%= @caseprocedure.procedure_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_caseprocedure_path(@caseprocedure) %> |
+<%= link_to 'Back', caseprocedures_path %>

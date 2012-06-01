@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  laterality: MyString
+  volume: MyString
+  patient_case_id: 1
+  procedure_id: 1
+
+two:
+  laterality: MyString
+  volume: MyString
+  patient_case_id: 1
+  procedure_id: 1

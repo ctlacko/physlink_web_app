@@ -1,0 +1,31 @@
+<h1>Listing physicians</h1>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Login</th>
+    <th>Password</th>
+    <th>Specialty</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @physicians.each do |physician| %>
+  <tr>
+    <td><%= physician.firstname %></td>
+    <td><%= physician.lastname %></td>
+    <td><%= physician.login %></td>
+    <td><%= physician.password %></td>
+    <td><%= physician.specialty_id %></td>
+    <td><%= link_to 'Show', physician %></td>
+    <td><%= link_to 'Edit', edit_physician_path(physician) %></td>
+    <td><%= link_to 'Destroy', physician, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Physician', new_physician_path %>

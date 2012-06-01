@@ -1,0 +1,47 @@
+<h1>Listing patientcases</h1>
+
+<table>
+  <tr>
+    <th>Procedure date</th>
+    <th>Procedure time</th>
+    <th>Facility</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Dob</th>
+    <th>Payment</th>
+    <th>Dictation</th>
+    <th>Followup</th>
+    <th>Physician</th>
+    <th>Id</th>
+    <th>Procedure</th>
+    <th>Age</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @patientcases.each do |patientcase| %>
+  <tr>
+    <td><%= patientcase.procedure_date %></td>
+    <td><%= patientcase.procedure_time %></td>
+    <td><%= patientcase.facility_id %></td>
+    <td><%= patientcase.firstname %></td>
+    <td><%= patientcase.lastname %></td>
+    <td><%= patientcase.dob %></td>
+    <td><%= patientcase.payment %></td>
+    <td><%= patientcase.dictation %></td>
+    <td><%= patientcase.followup %></td>
+    <td><%= patientcase.physician_id %></td>
+    <td><%= patientcase.id %></td>
+    <td><%= patientcase.procedure_id %></td>
+    <td><%= patientcase.age %></td>
+    <td><%= link_to 'Show', patientcase %></td>
+    <td><%= link_to 'Edit', edit_patientcase_path(patientcase) %></td>
+    <td><%= link_to 'Destroy', patientcase, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Patientcase', new_patientcase_path %>

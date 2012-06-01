@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @image.date %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @image.time %>
+</p>
+
+<p>
+  <b>Image uri:</b>
+  <%= @image.image_uri %>
+</p>
+
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>

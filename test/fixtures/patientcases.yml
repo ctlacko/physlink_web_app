@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  procedure_date: 2012-05-15
+  procedure_time: 2012-05-15 11:58:09
+  facility_id: 1
+  firstname: MyString
+  lastname: MyString
+  dob: 2012-05-15
+  payment: MyString
+  dictation: MyString
+  followup: MyString
+  physician_id: 1
+  id: 1
+  procedure_id: 1
+  age: 1
+
+two:
+  procedure_date: 2012-05-15
+  procedure_time: 2012-05-15 11:58:09
+  facility_id: 1
+  firstname: MyString
+  lastname: MyString
+  dob: 2012-05-15
+  payment: MyString
+  dictation: MyString
+  followup: MyString
+  physician_id: 1
+  id: 1
+  procedure_id: 1
+  age: 1
